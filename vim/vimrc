@@ -44,7 +44,8 @@ set smartcase
 set term=screen-256color
 set t_ut=
 set background=dark
-colorscheme Benokai
+" colorscheme Benokai
+colorscheme monokai
 " colorscheme solarized
 
 set list                   " Show non-printable characters.
