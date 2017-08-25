@@ -8,10 +8,10 @@
 - link:
     # ~/.bash:
     # ~/.bash_profile:
-    ~/.bashrc: .bashrc
-    ~/dotfiles: ''
+    ~/.bashrc: bashrc
+    # ~/dotfiles: ''
     ~/.vim: vim
-    # ~/.gitconfig: git/gitconfig
+    ~/.gitconfig: gitconfig
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
