@@ -12,6 +12,7 @@
     # ~/dotfiles: ''
     ~/.vim: vim
     ~/.gitconfig: gitconfig
+    ~/powerline-shell.py: powerline-shell/powerline-shell.py
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
