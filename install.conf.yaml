@@ -7,11 +7,12 @@
 
 - link:
     # ~/.bash:
-    # ~/.bash_profile:
     ~/.bashrc: bashrc
+    ~/.inputrc: inputrc
     # ~/dotfiles: ''
     ~/.vim: vim
     ~/.gitconfig: gitconfig
+    ~/.sqliterc: sqliterc
     ~/powerline-shell.py: powerline-shell/powerline-shell.py
 
 - shell:

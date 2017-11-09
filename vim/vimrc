@@ -7,7 +7,7 @@ runtime macros/matchit.vim
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
-syntax on                  " Enable syntax highlighting.
+syntax enable              " Enable syntax highlighting.
 
 set autoindent             " Indent according to previous line.
 set expandtab              " Use spaces instead of tabs.
@@ -99,3 +99,27 @@ noremap <Leader>N Nzz
 
 " Adds the =j command to format a json file
 nmap =j :%!python -m json.tool
+
+" From plugin talk
+set path+=** " Allows fuzzy file searching
+set wildmenu " Allows tab searching through list of matching files
+
+command! MakeTags !ctags -R .
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_python_checkers = ['pylint']
+
+highlight ColorColumn ctermbg=blue
+call matchadd('ColorColumn', '\%101v', 100)
+
+set relativenumber
+
+set noerrorbells visualbell t_vb=
