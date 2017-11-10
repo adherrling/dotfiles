@@ -128,3 +128,5 @@ alias python='python3.6'
 # if [ "$TERM" != "linux" ]; then
 #     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 # fi
+
+export EDITOR='vim'
