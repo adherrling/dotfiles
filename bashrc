@@ -120,7 +120,7 @@ fi
 
 alias filecount='ls -1 | wc -l'
 alias python='python3.6'
-alias julia='/usr/local/bin/julia'
+# alias julia='/usr/local/bin/julia'
 
 # function _update_ps1() {
 #     PS1="$(~/powerline-shell.py $? 2> /dev/null)"

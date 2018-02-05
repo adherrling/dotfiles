@@ -1,2 +1,1 @@
-PATH=$PATH:/home/austin/Julia/gurobi752
-export PATH
+export GUROBI_HOME=/home/austin/Julia/gurobi752/linux64
