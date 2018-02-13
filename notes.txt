@@ -1,0 +1,8 @@
+Using pip for python3.6:
+pip3.6 install <package>
+
+Virtualenvs:
+Make a virtual environment: mkvirtualenv <env>
+Delete a virtual environment: rmvirtualenv <env>
+Work on an existing virtual environment: workon <env>
+See all environments: workon
