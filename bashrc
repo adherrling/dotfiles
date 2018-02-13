@@ -131,3 +131,4 @@ alias filecount='ls -1 | wc -l'
 # fi
 
 export EDITOR='vim'
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.6
