@@ -119,7 +119,7 @@ if ! shopt -oq posix; then
 fi
 
 alias filecount='ls -1 | wc -l'
-# alias python='python3.6'
+alias py3='python3.6'
 # alias julia='/usr/local/bin/julia'
 
 # function _update_ps1() {
@@ -131,7 +131,8 @@ alias filecount='ls -1 | wc -l'
 # fi
 
 export EDITOR='vim'
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.6
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/dev
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.6
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
 source /usr/local/bin/virtualenvwrapper.sh
