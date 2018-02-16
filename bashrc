@@ -120,6 +120,8 @@ fi
 
 alias filecount='ls -1 | wc -l'
 alias py3='python3.6'
+alias py3v='/home/austin/.virtualenvs/math-bot/bin/python3.6'
+alias update='sudo apt update && sudo apt dist-upgrade'
 # alias julia='/usr/local/bin/julia'
 
 # function _update_ps1() {
