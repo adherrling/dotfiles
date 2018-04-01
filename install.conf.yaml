@@ -14,7 +14,6 @@
     ~/.vim: vim
     ~/.gitconfig: gitconfig
     ~/.sqliterc: sqliterc
-    ~/powerline-shell.py: powerline-shell/powerline-shell.py
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
