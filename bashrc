@@ -118,27 +118,23 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export EDITOR='/usr/bin/vim'
+export EDITOR='/usr/bin/less'
+
 alias filecount='ls -1 | wc -l'
 alias py3='python3.6'
-alias py3v='/home/austin/.virtualenvs/math-bot/bin/python3.6'
+alias pip3.6='python3.6 -m pip'
+alias mbv='source ~/mbv/bin/activate'
 alias update='sudo apt update && sudo apt dist-upgrade'
+alias test_bot='source ~/mbv/bin/activate && python3.6 ~/math-bot/testlauncher.py'
+alias run_bot='source ~/mbv/bin/activate && python3.6 ~/math-bot/launcher.py'
 alias mathbot_restart='sudo systemctl restart mathbot.service'
 alias mathbot_start='sudo systemctl start mathbot.service'
 alias mathbot_stop='sudo systemctl stop mathbot.service'
 alias mathbot_logs='sudo journalctl -u mathbot.service'
-# alias julia='/usr/local/bin/julia'
 
-# function _update_ps1() {
-#     PS1="$(~/powerline-shell.py $? 2> /dev/null)"
-# }
-
-# if [ "$TERM" != "linux" ]; then
-#     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-# fi
-
-export EDITOR='vim'
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/dev
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.6
-export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
-source /usr/local/bin/virtualenvwrapper.sh
+export PATH=$PATH:/home/austin/.local/bin
+export GUROBI_HOME=/home/austin/gurobi752/linux64
+export PATH="${PATH}:${GUROBI_HOME}/bin"
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_HOME}/lib"
+export GRB_LICENSE_FILE=/home/austin/gurobi752/gurobi.lic
