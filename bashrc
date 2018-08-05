@@ -90,7 +90,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='ls -alF'
+alias ll='ls -alhF'
 alias la='ls -A'
 alias l='ls -CF'
 
@@ -119,7 +119,7 @@ if ! shopt -oq posix; then
 fi
 
 export EDITOR='/usr/bin/vim'
-export EDITOR='/usr/bin/less'
+export PAGER='/usr/bin/less'
 
 alias filecount='ls -1 | wc -l'
 alias py3='python3.6'
@@ -132,6 +132,7 @@ alias mathbot_restart='sudo systemctl restart mathbot.service'
 alias mathbot_start='sudo systemctl start mathbot.service'
 alias mathbot_stop='sudo systemctl stop mathbot.service'
 alias mathbot_logs='sudo journalctl -u mathbot.service'
+alias push_master='dir=$(pwd); git checkout master && git push && cd /etc/math-bot && git pull; cd $dir'
 
 export PATH=$PATH:/home/austin/.local/bin
 export GUROBI_HOME=/home/austin/gurobi752/linux64
